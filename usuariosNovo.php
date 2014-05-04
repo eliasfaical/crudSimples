@@ -7,10 +7,16 @@ include './includes/cabecalho.php';
 // Esta página deve checar se o usuário está logado
 checkLogin();
 
+if ($_POST['salvar']) // usuario clicou no botao salvar
+{
+		
+}
+
+
 ?>
 
 <div class="col-md-10 col-md-offset-1">
-	<form action="usuariosNoco.php"  method="post">
+	<form action="usuariosNovo.php"  method="post">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title"><strong>Novo usuário</strong>
