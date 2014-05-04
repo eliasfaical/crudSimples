@@ -74,7 +74,7 @@ if ($_POST['salvar']) // usuario clicou no botao salvar
 					<a href="usuariosListar.php"  class="pull-right "><span class="glyphicon glyphicon-remove"></span></a>
 				</h3></div>
 				<div class="panel-body">
-<?php echo $erro ?>
+					<?php echo $erro ?>
 					<div class="row">
 
 						<div class="col-md-6">
@@ -123,7 +123,8 @@ if ($_POST['salvar']) // usuario clicou no botao salvar
 			</div>
 		</div>
 	</form>
+</div>
 
-	<?php
-	include './includes/rodape.php';
-	?>
+<?php
+include './includes/rodape.php';
+?>

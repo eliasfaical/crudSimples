@@ -25,19 +25,21 @@ $usuarios = $stmt->fetchAll();
 
 				<table class="table table-striped  table-bordered">
 					<tr>
-						<th>Id</td>
-						<th>Nome</td>
-						<th>Email</td>
+						<th>Id</th>
+						<th>Nome</th>
+						<th>Email</th>
+						<th>Login</th>
 					</tr>
 					<?php
 
-						foreach ($usuarios as $u) {
-							echo "<tr>";
-							echo "<td>{$u->idusuario}</td>";
-							echo "<td><a href='usuariosShow.php?idusuario={$u->idusuario}'>{$u->nome}</a></td>";
-							echo "<td>{$u->email}</td>";
-							echo "</tr>";
-						}
+					foreach ($usuarios as $u) {
+						echo "<tr>";
+						echo "<td>{$u->idusuario}</td>";
+						echo "<td><a href='usuariosShow.php?idusuario={$u->idusuario}'>{$u->nome}</a></td>";
+						echo "<td>{$u->email}</td>";
+						echo "<td>{$u->login}</td>";
+						echo "</tr>";
+					}
 
 					?>
 				</table>
@@ -49,8 +51,9 @@ $usuarios = $stmt->fetchAll();
 			</div>
 		</div>
 	</div>
+</div>
 
 
-	<?php
-	include './includes/rodape.php';
-	?>
+<?php
+include './includes/rodape.php';
+?>
