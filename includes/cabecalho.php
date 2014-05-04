@@ -29,10 +29,10 @@
       <div class="container" style="margin-top:60px;">
 
         <?php
-        if ($_SESSION['message']!=null){
+        if ($_SESSION['messagem']!=null){
           echo "<div class='col-md-10 col-md-offset-1'>
-          <p class='alert alert-success'><span class='glyphicon glyphicon-ok'></span> {$_SESSION['message']}</p>
+          <p class='alert alert-success'><span class='glyphicon glyphicon-ok'></span> {$_SESSION['messagem']}</p>
         </div>";
-        $_SESSION['message']=null;
+        $_SESSION['messagem']=null;
         }
         

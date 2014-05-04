@@ -38,5 +38,5 @@ function setError($erro){
 */
 function setMessage($msg)
 {
-	$_SESSION['message']=$msg;	
+	$_SESSION['messagem']=$msg;	
 }
