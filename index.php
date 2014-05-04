@@ -1,6 +1,7 @@
 <?php
 //Estes dois includes são obrigatórios para qualquer página PHP
 include 'includes/config.php';
+setMenu("Home");
 include 'includes/cabecalho.php';
 
 // Esta página deve checar se o usuário está logado
@@ -17,6 +18,7 @@ checkLogin();
 			Use o menu acima para navegar.
 			<br/><br/>
 			Para entender melhor sobre o sistema, acesse: 
+			https://github.com/danielps/crudSimples
 
 			</div>
 		</div>

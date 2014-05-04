@@ -18,8 +18,8 @@ define("DB_PASSWORD","");
 //
 $menu=array(
 		array("Home","index.php"),
-		array("Usuários","ususariosListar.php"),
-		array("Produtos","produtosListar.php"),
+		array("Usuários","usuariosListar.php"),
+		//array("Produtos","produtosListar.php"),
 		array("Logout","logout.php")
 	);
 //Active Menu é um nome para o menu ativo. Pode

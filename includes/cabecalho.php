@@ -8,6 +8,8 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    
     <!-- Optional theme -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
 
@@ -25,10 +27,3 @@
   include 'menu.php';
   ?>
   <div class="container" style="margin-top:60px;">
-      
-<?php
-if ($_GET["erro"])
-{
-    echo "<div class='bg-danger'><b>Erro:</b> {$_GET["erro"]}</div>";
-}
-?>
