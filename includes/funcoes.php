@@ -24,3 +24,19 @@ function setMenu($menu)
 {
 	define("MENU",$menu);
 }
+
+/**
+* Retorna uma mensagem de erro personalizada do bootstrap
+*/
+function setError($erro){
+	return "<p class='alert alert-danger'><span class='glyphicon glyphicon-warning-sign'></span> $erro</p>";
+}
+
+/**
+* Adiciona uma mensagem na sessao
+* Usado para adicionar uma mensagem e redirecionar para alguma pagina
+*/
+function setMessage($msg)
+{
+	$_SESSION['message']=$msg;	
+}
